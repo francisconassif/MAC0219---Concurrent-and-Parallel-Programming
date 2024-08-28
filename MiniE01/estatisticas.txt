@@ -1,0 +1,9 @@
+francisco@francisco:~/USP/Paralela$ ./calculamedia < mini1_py_times.txt 
+
+Tempo médio de execução em python: 291.33 ms
+Desvio-padrão em python: 13.5973 ms
+
+francisco@francisco:~/USP/Paralela$ ./calculamedia < mini1_cpp_times.txt 
+
+Tempo médio de execução em c++: 23.8064 ms
+Desvio-padrão em c++: 0.568367 ms
