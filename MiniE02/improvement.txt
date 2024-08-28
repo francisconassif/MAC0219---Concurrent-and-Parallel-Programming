@@ -1,0 +1,22 @@
+Descrição das modificações no MiniEP2 em relação ao MiniEP1
+Disciplina: MAC0219 - Programação Concorrente e Paralela
+Professor: Alfredo Goldman
+Autor: Francisco Nassif Membrive
+
+ENC: UTF-8
+
+Modificações implementadas no MiniEP#2:
+
+Utilizar diretivas de compilação: 
+	foi acrescentada a flag -O3 que otimiza o código
+	foi acrescentada a flag -mavx para acelerar operações matemáticas e de vetores
+	foi acrescentada a flag -mfma que também otimiza o número de ciclos necessários para calcular certas operações
+	
+Otimizar o algoritmo com modificações no código:
+	o laço que continha outros laços aninhados foi reduzido para somente um laço dentro de outro, reduzindo em aproximadamente 1/3 o tempo gasto no laço
+	modificação do tipo long double para double, já que não lidamos com números excessivamente grandes ou com muitas casas decimais
+	utilização de valores fixos em momentos em que era utilizada uma variável que tinha valor conhecido
+	modificação do uso de vetores de alocação dinâmica para vetores de alocação fixa
+	
+Demais sugestões:
+	Houve algumas tentativas de usar primitivas vetoriais, operações com ponteiros e modificações em registradores. No entanto, por alguma limitação ou erro na implementação, o tempo acabou ficando maior e as alterações descartadas.
