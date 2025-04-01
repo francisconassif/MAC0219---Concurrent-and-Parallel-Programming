@@ -6,5 +6,3 @@ This work, related to the MAC0219 course, implemented C++ and Python versions ba
 These files were used as input for calculamedia.cpp, a program that calculated the mean and standard deviation of the times, which were recorded in the files miniEP.txt and estatisticas.txt.
 
 The source code can be found in leapfrog.cpp and leapfrog.py.
-
-The final result is in estatisticas.txt
